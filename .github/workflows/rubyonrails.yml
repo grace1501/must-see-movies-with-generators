@@ -52,3 +52,5 @@ jobs:
       # Add or replace any other lints here
       - name: Lint Ruby files
         run: bundle exec rubocop --parallel
+      - run: npm i
+      - run: npm run lint
